@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS-Handson1</title>
+</head>
+
+<body>
+    <h1>Welcome to JavaScript</h1>
+    <br>
+    <h3>JavaScript Codding Project</h3>
+    <br>
+            <h5>1. Calculator</h5>
+            <p>Write a program to make a simple calculator using switch statement that takes operator and two numbers from user and print the result after operation.</p>
+            <pre>
+               
+            </pre>
+      
+       
+            <h5>2. Check whether the condition is fulfilled or not?</h5>
+            <p>Write a program that takes a number and prints whether the number is divisible by 6 and 9 or not.</p>
+            <pre>
+               
+            </pre>
+        
+            <h5>3. Eligible Voter</h5>
+            <p>You are given an integer A, denoting the age of a person, and your task is to determine whether he/she is eligible to vote or not.</p>
+            <pre>
+              const isEligible = (a) => {
+                if(a>=18){
+                  return"Eligible for Voting";
+                }
+                else{
+                  return"Not Eligible for Voting";
+                }
+              };            
+            </pre>
+            
+            <h5>4. Find Relation</h5>
+            <p>PrepBuddy wants you to get familiar with various Relational operators. He provides you with two integer values X and Y and asks you to find the relation between them.</p>
+            <p>The relationships between integers X and Y are as follows:</p>
+            <ul>
+              <li>If X < Y, it means that X is smaller than Y.</li>
+              <li>If X > Y, it means that X is greater than Y.</li>
+              <li>If X=Y, it means that X is equal to Y.</li>
+            </ul>
+            <pre>
+              const findRelation = (x,y) => {
+                if(x > y){
+                  return(x + " is greater than " + y);
+                }else if(x < y){
+                  return(x + " is smaller than " + y);
+                }else if(x==y){
+                  return(x + " is equal to " + y);
+                }
+            };
+            </pre>
+            
+            <h5>5. Find Grades</h5>
+            <p>Your school has the following grading system based upon the marks(M) obtained by a student:</p>
+            <ul>
+              <li>If M ≤ 10, the grade will be .</li>
+                <li>If 
+                  11
+                  ≥
+                  M
+                  ≤
+                  20
+                  , the grade will be 
+                  D
+                  .</li>
+                  <li>If 
+                    21
+                    ≥
+                    M
+                    ≤
+                    30
+                    , the grade will be 
+                    C
+                    .</li>
+                    <li>If 
+                      31
+                      ≥
+                      M
+                      ≤
+                      40
+                      , the grade will be 
+                      B
+                      .</li>
+                      <li>If 
+                        41
+                        ≥
+                        M
+                        ≤
+                        50
+                        , the grade will be 
+                        A
+                        .</li>
+            </ul>
+            
+            <p>Your friend will enter his marks out of 50, and your task is to print his grades using a switch statement.</p>
+            <pre>
+              const findGrades = (a) => {
+                if(a<=10){
+                  return "E"
+                }
+                else if(11>=a || a<=20){
+                  return "D"
+                }
+                else if(21>=a || a<=30){
+                  return "C"
+                }
+                else if(31>=a || a<=40){
+                  return "B"
+                }
+                else if(41>=a || a<=50){
+                  return "A"
+                }
+            };
+            </pre>
+            
+            <h5>6. Get Value</h5>
+            <p>You are provided with a table containing some characters and their corresponding values. Your task will be to find the value from the table corresponding to an input character and return it.</p>
+            <pre>
+              | P or p 	- PrepBytes      	|
+              | Z or z 	- Zenith         	|
+              | E or e 	- Expert Coder   	|
+              | D or d 	- Data Structure 	|
+            </pre>
+            <pre>
+
+            </pre>
+
+            <h5>7. Find the maximum out of three numbers.</h5>
+            <p>Take three numbers and print the largest number among them if all of three are same print -1.</p>
+            <pre>
+              const Max_out_of_three = (A,B,C) => {
+                if(A>B && A>C){
+                  return A
+                }
+                else if(B>A && B>C){
+                  return B
+                }else if(C>A && C>B){
+                  return C
+                }
+                else{
+                  return "-1"
+                }
+            };
+            </pre>
+       
+            <h5>8. Second Smallest</h5>
+            <p>You are given 3 distinct integers X,Y and Z, and your task is to find and return the second smallest integer among the three provided integers..</p>
+            <pre>
+              const findSndSmallest = (x,y,z) => {
+                if((x>y && z>x) || (y>x && x>z)){
+                   return x
+                 }
+                 else if((x>y && z < y) || (x < y && z > y)){
+                   return y
+                 }
+                 else if((y>x && y>z) || (x>y && z>y)){
+                   return z
+                 }
+             };
+            </pre>
+       
+            <h5>9. Check whether the triangle is Acute or Obtuse</h5>
+            <p>Write a program takes takes three angles and checks whether the triangle is acute or obtuse.</p>
+            <pre>
+              const Triangle_Check = (A,B,C) => {
+                if(A>90 || B>90 || C>90){
+                  return "obtuse"
+                }
+                else{
+                  return "acute"
+                }
+            };
+            </pre>
+
+
+</body>
+
+</html>
