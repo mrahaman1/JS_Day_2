@@ -17,14 +17,37 @@
             <h5>1. Calculator</h5>
             <p>Write a program to make a simple calculator using switch statement that takes operator and two numbers from user and print the result after operation.</p>
             <pre>
-               
+              const Calculator = (A, B, C) => 
+              {
+                switch(A){
+                  case "+":
+                    return B + C;
+                  case "-":
+                    return B-C;
+                  case "*":
+                    return B * C;
+                  case '/':
+                    return B/C;
+                  default:
+                  return "Invalid Input";
+                }
+              };
+              
             </pre>
       
        
             <h5>2. Check whether the condition is fulfilled or not?</h5>
             <p>Write a program that takes a number and prints whether the number is divisible by 6 and 9 or not.</p>
             <pre>
-               
+              const Check_divisibility = (N) => {
+                if(N%6 === 0 && N%9 === 0){
+                  return "Divisible by both"
+                }
+                else{
+                  return "Not Divisible by both"
+                }
+                
+            };
             </pre>
         
             <h5>3. Eligible Voter</h5>
@@ -64,42 +87,10 @@
             <p>Your school has the following grading system based upon the marks(M) obtained by a student:</p>
             <ul>
               <li>If M ≤ 10, the grade will be .</li>
-                <li>If 
-                  11
-                  ≥
-                  M
-                  ≤
-                  20
-                  , the grade will be 
-                  D
-                  .</li>
-                  <li>If 
-                    21
-                    ≥
-                    M
-                    ≤
-                    30
-                    , the grade will be 
-                    C
-                    .</li>
-                    <li>If 
-                      31
-                      ≥
-                      M
-                      ≤
-                      40
-                      , the grade will be 
-                      B
-                      .</li>
-                      <li>If 
-                        41
-                        ≥
-                        M
-                        ≤
-                        50
-                        , the grade will be 
-                        A
-                        .</li>
+              <li>If 11 ≥ M ≤ 20, the grade will be D.</li>
+              <li>If 21 ≥ M ≤ 30, the grade will be C.</li>
+              <li>If 31 ≥ M ≤ 40, the grade will be B.</li>
+              <li>If 41 ≥ M ≤ 50, the grade will be A.</li>
             </ul>
             
             <p>Your friend will enter his marks out of 50, and your task is to print his grades using a switch statement.</p>
@@ -132,7 +123,20 @@
               | D or d 	- Data Structure 	|
             </pre>
             <pre>
-
+              const getValue = (a) => {
+                if(a=== "P" || a=== "p"){
+                 return "PrepBytes"
+               }
+               else if(a=== "Z" || a=== "z"){
+                 return "Zenith"
+               }
+               else if(a=== "E" || a=== "e"){
+                 return "Expert Coder"
+               }
+               else if(a=== "D" || a=== "d"){
+                 return "Data Structure"
+               }
+              };
             </pre>
 
             <h5>7. Find the maximum out of three numbers.</h5>
